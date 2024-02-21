@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+  }
+  .parallax{
+    /* The image used */
+    background-image: url("treyinblue.png");
+    position: relative;
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(50%);
+  }
+  .parallax{
+    min-height: 100%;
+  }
+  .caption span.border {
+    background-color: #282424;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 30px;
+    letter-spacing: 7px;
+  }
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  #row-1{
+    align-self: center;
+    align-items: center;
+  }
+  #parallax-2{
+    background-image: none;
+    background-color: rgba(240, 255, 255, 0.266);
+  }
+  #screen-box-1, #screen-box-2, #screen-box-3 {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  #screen-box-image-1, #screen-box-image-2, #screen-box-image-3{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-image: url("A81B34B2-73D4-4978-A34E-C1A95BD0AD00.jpeg");
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  #screen-box-image-2, #screen-box-image-3:hover, #screen-box-image-1:hover{
+    animation: pan-image 15s linear;
+  }
+  @keyframes pan-image{
+    from{
+        background-position: 100% 0%;
+    }
+    to{
+      background-position: 0% 100%;
+    }
+  }
+  #info-header{
+    margin-bottom: 10px;
+  }
+  #info-page{
+    background-color: azure;
+    background-image: none;
+  }
+  #info-container{
+    width: 100%;
+    aspect-ratio: 2/1;
+    background-image: none;
+    background-color: rgba(240, 255, 255, 0.266);
+  }
+  #box1{
+    width: 75%;
+    aspect-ratio: 10/16;
+    color: #282424;
+  }
